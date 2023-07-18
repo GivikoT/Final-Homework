@@ -1,0 +1,143 @@
+footer {
+  background-color: var(--black);
+  width: 100%;
+  min-height: 481px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 150px;
+}
+
+.footer_item {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.footer_item:first-child {
+  width: 390px;
+}
+
+.footer_item.row {
+  width: calc(100% - 390px);
+}
+
+.footer_item.second_section,
+.footer_item.third_section {
+  width: 50%;
+}
+.footer_item.row {
+  flex-direction: row;
+}
+
+footer .first_section svg {
+  margin-bottom: 50px;
+}
+
+footer .first_section p,
+footer .first_section span {
+  color: var(--white);
+  font-family: var(--inter-fnt);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+footer .first_section span {
+  padding-top: 10px;
+}
+
+footer .second_section {
+  margin-bottom: 17px;
+}
+
+footer .second_section h3 {
+  color: #9d9d9d;
+  font-family: var(--inter-fnt);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 150px;
+}
+
+footer .second_section ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer .second_section ul li {
+  padding-top: 9px;
+}
+
+footer .second_section ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--inter-fnt);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: 0.3s;
+  padding: 6px 0;
+}
+footer .second_section ul li a:hover {
+  cursor: pointer;
+}
+footer .third_section h3 {
+  color: #9d9d9d;
+  font-family: var(--inter-fnt);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 70px;
+  margin-bottom: 18px;
+}
+
+footer .third_section svg {
+  margin-right: 10px;
+}
+.soc_icons {
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  footer {
+    min-height: 481px;
+    flex-direction: column;
+    padding: 80px 18px 110px 18px;
+  }
+
+  .footer_item {
+    width: 100%;
+    min-height: initial;
+  }
+
+  .footer_item:first-child {
+    width: 100%;
+  }
+
+  .footer_item:last-child {
+    width: 100%;
+  }
+
+  .footer_item.row {
+    padding-top: 50px;
+  }
+  footer .first_section svg,
+  footer .second_section h3,
+  footer .third_section h3 {
+    margin-top: 0;
+  }
+  footer .second_section h3 {
+    padding-bottom: 13px;
+  }
+}

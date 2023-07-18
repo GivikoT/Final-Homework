@@ -1,0 +1,37 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Albra";
+  src:
+    url(./font//albra_medium-webfont.woff) format("woff"),
+    url(./font//albra_medium-webfont.woff2) format("woff2");
+}
+
+:root {
+  --black: #000;
+  --red: #d25941;
+  --white: #fff;
+  --yellow: #fcf081;
+  --purple: #c6b1eb;
+  --inter-fnt: "Inter", sans-serif;
+  --albra-fnt: "Albra", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

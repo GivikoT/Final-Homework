@@ -1,0 +1,35 @@
+.services {
+  display: flex;
+  overflow: hidden;
+}
+
+.services .slider span {
+  display: inline-flex;
+  border-radius: 55px;
+  padding: 36px 48px;
+  margin: 10px 10px 20px 0;
+  align-items: flex-start;
+  font-family: var(--albra-fnt);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.services .slider span.first {
+  background-color: #e8dff6;
+}
+
+.services .slider span.second {
+  background-color: var(--yellow);
+}
+
+.services .slider span.third {
+  background-color: #e4f2f5;
+}
+
+@media (max-width: 768px) {
+  .services .slider span {
+    padding: 36px 32px;
+    font-size: 20px;
+  }
+}

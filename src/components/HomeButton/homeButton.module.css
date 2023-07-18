@@ -1,0 +1,17 @@
+.homeBtn {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  font-family: var(--inter-fnt);
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.homeBtn:hover {
+  transform: scale(1.05);
+}
